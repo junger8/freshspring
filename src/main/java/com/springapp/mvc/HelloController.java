@@ -12,6 +12,9 @@ public class HelloController {
 	public String printWelcome(ModelMap model) {
 		model.addAttribute("message", "Fresh Spring!");
 		model.addAttribute("title", "FreshSpring");
+        model.addAttribute("header1","Something");
+        model.addAttribute("header2","Something Else");
+        model.addAttribute("header3","Even More...");
 		return "index";
 	}
 }
