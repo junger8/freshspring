@@ -1,4 +1,4 @@
-package com.jonunger.freshspring.model.service;
+package com.jonunger.freshspring.service;
 
 /**
  * Created by junger on 10/2/2015.

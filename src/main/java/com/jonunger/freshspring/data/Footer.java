@@ -1,20 +1,26 @@
-package com.jonunger.freshspring.model.dao;
+package com.jonunger.freshspring.data;
 
 /**
  * Created by junger on 10/4/2015.
  */
-public class FooterDao {
+public class Footer {
 
     private int id;
-    private short copyYear;
+    private int copyYear;
     private String company;
     private String comment;
 
-    public short getCopyYear() {
+    public Footer(int copyYear, String company, String comment){
+        this.copyYear = copyYear;
+        this.company = company;
+        this.comment = comment;
+    }
+
+    public int getCopyYear() {
         return copyYear;
     }
 
-    public void setCopyYear(short copyYear) {
+    public void setCopyYear(int copyYear) {
         this.copyYear = copyYear;
     }
 
@@ -42,6 +48,9 @@ public class FooterDao {
         this.comment = comment;
     }
 
+    public String getFormattedFooter(){
+        return getCopyYear()+" "+getCompany()+" "+getComment();
+    }
 
 
 }

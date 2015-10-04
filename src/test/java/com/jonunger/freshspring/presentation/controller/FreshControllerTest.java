@@ -1,4 +1,4 @@
-package com.jonunger.freshspring.controller;
+package com.jonunger.freshspring.presentation.controller;
 
 import junit.framework.TestCase;
 import org.junit.After;
