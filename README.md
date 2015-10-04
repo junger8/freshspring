@@ -3,9 +3,9 @@ This is a simple sample application using Spring MVC 4 to retrieve content and d
 
 ##Themes
 FreshSpring offers three themes
--Flowers
--Windy
--Showers
+* Flowers
+* Windy
+* Showers
 
 ##Setup Notes
 Step by Step notes on setup would go here
