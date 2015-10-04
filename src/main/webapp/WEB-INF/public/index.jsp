@@ -20,6 +20,25 @@
 
 <body>
 
+<nav class="navbar navbar-default navbar-fixed-top">
+	<div class="container">
+		<ul class="nav navbar-nav">
+			<li><a class="navbar-brand" href="/home">
+				<span class="glyphicon glyphicon-leaf" aria-hidden="true"></span>
+			</a></li>
+			<li><a href="/about">About</a></li>
+			<li><a href="/contact">Contact</a></li>
+			<li><a href="/admin">Admin</a></li>
+		</ul>
+	</div>
+</nav>
+
+<ol class="breadcrumb">
+	<li><a href="#">Home</a></li>
+	<li><a href="#">Library</a></li>
+	<li class="active">Data</li>
+</ol>
+
 <div class="jumbotron">
 	<div class="container">
 		<h1>${message}</h1>
