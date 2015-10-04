@@ -4,7 +4,6 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 	<title>${title}</title>
 
 	<!-- Bootstrap -->
@@ -19,7 +18,7 @@
 </head>
 
 <body>
-
+<header>
 <nav class="navbar navbar-default navbar-fixed-top">
 	<div class="container">
 		<ul class="nav navbar-nav">
@@ -30,20 +29,15 @@
 			<li><a href="/contact">Contact</a></li>
 			<li><a href="/admin">Admin</a></li>
 		</ul>
+
 	</div>
 </nav>
-
-<ol class="breadcrumb">
-	<li><a href="#">Home</a></li>
-	<li><a href="#">Library</a></li>
-	<li class="active">Data</li>
-</ol>
+</header>
 
 <div class="jumbotron">
 	<div class="container">
-		<h1>${message}</h1>
-		<p>Welcome to the FreshSpring Site... Stay awhile and enjoy the view</p>
-		<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+		<h1>${headline}</h1>
+		<p>${subheadline}</p>
 	</div>
 
 

@@ -1,0 +1,10 @@
+body {
+    margin-top: 50px; /* 50px is the height of the navbar - change this if the navbarn height changes */
+    color: red;
+}
+
+
+.jumbotron{
+    color: green;
+    /*background-color:none !important;*/
+}

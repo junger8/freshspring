@@ -7,6 +7,6 @@ import static org.junit.Assert.*;
 /**
  * Created by junger on 10/2/2015.
  */
-public class InventoryServiceTest extends TestCase {
+public class PageServiceTest extends TestCase {
 
 }

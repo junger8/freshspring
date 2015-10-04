@@ -8,9 +8,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class FreshController {
 
-    @RequestMapping("/admin")
+    @RequestMapping(value = "/admin", method=RequestMethod.GET)
     public String admin(ModelMap model) {
-        model.addAttribute("message", "Fresh Spring Admin!");
+        model.addAttribute("headline", "Fresh Spring Admin!");
+        model.addAttribute("subheadline", "With great power comes great responsibility");
         model.addAttribute("title", "FreshSpring - Admin");
         model.addAttribute("header1","Something");
         model.addAttribute("header2","Admin");
@@ -19,9 +20,10 @@ public class FreshController {
     }
 
 
-    @RequestMapping("/about")
+    @RequestMapping(value = "/about", method=RequestMethod.GET)
     public String about(ModelMap model) {
-        model.addAttribute("message", "About Us");
+        model.addAttribute("headline", "About Us");
+        model.addAttribute("subheadline", "More than you wanted to know about FreshSpring!");
         model.addAttribute("title", "FreshSpring - About");
         model.addAttribute("header1","Who We are");
         model.addAttribute("header2","What we do");
@@ -29,9 +31,10 @@ public class FreshController {
         return "index";
     }
 
-    @RequestMapping("/contact")
+    @RequestMapping(value = "/contact", method=RequestMethod.GET)
     public String contact(ModelMap model) {
-        model.addAttribute("message", "Contact Us");
+        model.addAttribute("headline", "Contact Us");
+        model.addAttribute("subheadline", "Find out More");
         model.addAttribute("title", "FreshSpring - Contact");
         model.addAttribute("header1","Find Us");
         model.addAttribute("header2","Call Us");
@@ -39,9 +42,10 @@ public class FreshController {
         return "index";
     }
 
-    @RequestMapping("/home")
+    @RequestMapping(value = "/home", method=RequestMethod.GET)
     public String home(ModelMap model) {
-        model.addAttribute("message", "Fresh Spring!");
+        model.addAttribute("headline", "Fresh Spring!");
+        model.addAttribute("subheadline", "Take your shoes off and stay awhile");
         model.addAttribute("title", "FreshSpring - Home");
         model.addAttribute("header1","Something");
         model.addAttribute("header2","Something Else");
