@@ -1,7 +1,7 @@
-package com.jonunger.freshspring.presentation.controller;
+package com.jonunger.freshspring.controller;
 
-import com.jonunger.freshspring.data.Page;
-import com.jonunger.freshspring.presentation.model.PageDao;
+import com.jonunger.freshspring.domain.Page;
+import com.jonunger.freshspring.service.PageService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -13,8 +13,8 @@ public class FreshController {
 
     @RequestMapping(value = "/{id}", method=RequestMethod.GET)
     public String router(ModelMap model, @PathVariable("id") String slug) {
-        PageDao pageDao = new PageDao(slug);
-        Page page = pageDao.getPage();
+        PageService pageService = new PageService(slug);
+        Page page = pageService.getPage();
         model.addAttribute("headline", page.getContent().getHeader().getHeadline());
         model.addAttribute("subheadline", page.getContent().getHeader().getSubheadline());
         model.addAttribute("title", "FreshSpring - "+slug);

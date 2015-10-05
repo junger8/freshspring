@@ -1,4 +1,4 @@
-package com.jonunger.freshspring.data;
+package com.jonunger.freshspring.domain;
 
 /**
  * Created by junger on 10/4/2015.

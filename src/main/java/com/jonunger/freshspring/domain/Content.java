@@ -1,4 +1,4 @@
-package com.jonunger.freshspring.data;
+package com.jonunger.freshspring.domain;
 
 import java.util.List;
 
