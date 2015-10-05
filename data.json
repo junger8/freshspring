@@ -1,0 +1,70 @@
+{
+  "year":2015,
+  "name":"FreshSpring",
+  "footerMessage":"All rights reserved",
+  "pages":[
+    {
+      "title":"about",
+      "headline":"About Us",
+      "subheadline":"A little bit about us",
+      "touts":[
+        {
+          "header":"Our History",
+          "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque iaculis sem vel aliquet ornare. Aenean rutrum iaculis nisl, id iaculis quam eleifend vel. Phasellus congue facilisis sollicitudin. In vestibulum erat ante. Curabitur sagittis urna nec ante pharetra auctor. Aliquam velit ligula, dictum nec elit sit amet, imperdiet congue magna. Praesent nec porttitor ex, non feugiat erat. Proin dictum metus vitae odio pharetra tristique. Aenean eu est auctor, vehicula justo ut, blandit turpis. Fusce commodo vehicula lacus in euismod. Suspendisse imperdiet euismod tortor non condimentum. Etiam metus mi, faucibus quis blandit eget, blandit at nulla. Aliquam scelerisque enim arcu, in pharetra nunc gravida sed. Ut blandit erat in elit pharetra elementum. Phasellus placerat pretium enim eu convallis. Vivamus ultrices, nulla vel tristique facilisis, purus enim consequat nunc, a scelerisque massa justo vel risus.",
+          "buttonMessage":"Read More"
+        },
+        {
+          "header":"Our Values",
+          "content":"Aliquam aliquet hendrerit risus, quis vehicula quam ultrices ac. Cras interdum rutrum ultrices. Integer nec vulputate magna, in faucibus risus. Sed quam velit, blandit ac porttitor a, porta sed quam. Ut nec fringilla urna. Aenean a posuere tellus, suscipit rutrum elit. Aliquam finibus nisl vel arcu condimentum, nec dapibus purus mattis.",
+          "buttonMessage":"Read More"
+        },
+        {
+          "header":"Our Future",
+          "content":"Proin tempor ipsum a imperdiet mollis. Etiam mollis, purus nec accumsan condimentum, nunc mi egestas erat, vitae malesuada lectus velit ac nisl. Morbi ut tortor quis mauris hendrerit viverra id venenatis leo. Nunc sed rutrum metus. Nulla neque quam, volutpat venenatis elit id, auctor ullamcorper tortor. Aliquam at lectus sit amet lectus pellentesque vehicula. Etiam at libero ante. Pellentesque pellentesque consequat consequat. Donec ultrices orci vitae tincidunt aliquam. Vivamus non turpis ligula.",
+          "buttonMessage":"Read More"
+        }
+      ]
+    },
+    {
+      "title":"contact",
+      "headline":"Contact Us",
+      "subheadline":"Get in contact with us",
+      "touts":[
+        {
+          "header":"Phone",
+          "content":"(800) 123-4800"
+        },
+        {
+          "header":"Email",
+          "content":"webmaster@freshspring"
+        },
+        {
+          "header":"Address",
+          "content":"1235 North Flowers St, Los Angeles, CA 90006"
+        }
+      ]
+    },
+    {
+      "title":"admin",
+      "headline":"Admin",
+      "subheadline":"With great power comes great responsibility",
+      "touts":[
+        {
+          "header":"Roles",
+          "content":"Maecenas tristique, tortor nec consequat congue, eros est pretium ante, sed tempus enim nulla eget augue. Nam semper urna vitae leo porta venenatis. Fusce ligula neque, finibus vel magna et, fermentum tincidunt arcu. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin fermentum velit ut tellus aliquam tempus. Maecenas dignissim diam sed dictum vestibulum. Duis magna dolor, malesuada et nunc ut, efficitur euismod mauris. Sed eros purus, bibendum non congue quis, vulputate at lacus. Nullam venenatis velit ipsum, vitae ultrices sapien viverra vitae.",
+          "buttonMessage":"Add Roles"
+        },
+        {
+          "header":"User",
+          "content":"Vivamus sed mauris vitae libero auctor gravida quis laoreet metus. In est turpis, luctus in convallis quis, venenatis ut neque. Suspendisse quis tristique nisl, quis dapibus magna. Nullam sollicitudin metus nec justo egestas tincidunt. Proin sollicitudin, nulla non volutpat placerat, sem sem faucibus odio, eu convallis turpis nisl non ante. Mauris in quam molestie, consectetur nulla eu, pharetra ante. Cras elit arcu, pretium at eleifend tincidunt, accumsan a augue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus in metus id arcu sollicitudin pretium. Cras pellentesque pretium odio ut placerat. Vivamus interdum, odio eget aliquet porttitor, augue ante ultrices tellus, rhoncus euismod lectus nulla ut erat. Etiam sit amet neque nec dolor sodales maximus faucibus at lectus. Nam sed risus dapibus, pretium velit id, consectetur eros. Sed rutrum sed lectus vel faucibus. Suspendisse et neque non sapien commodo hendrerit. Phasellus et gravida nulla.",
+          "buttonMessage":"Add User"
+        },
+        {
+          "header":"Groups",
+          "content":"Duis sit amet urna rutrum, fermentum est non, posuere diam. Suspendisse interdum mauris metus, id pulvinar nibh ultricies vitae. Phasellus egestas lacus ac ultricies consequat. Praesent erat nunc, pretium a vehicula a, mattis et ligula. Mauris diam felis, mollis nec molestie non, tincidunt ut elit. Ut arcu diam, tincidunt molestie eros ac, fringilla dictum ipsum. Donec efficitur rhoncus nunc, ut ultricies augue vestibulum eget. Nunc pretium arcu nec imperdiet lobortis.",
+          "buttonMessage":"Find Groups"
+        }
+      ]
+    }
+  ]
+}

@@ -17,7 +17,7 @@ public class FreshController {
         Page page = pageDao.getPage();
         model.addAttribute("headline", page.getContent().getHeader().getHeadline());
         model.addAttribute("subheadline", page.getContent().getHeader().getSubheadline());
-        model.addAttribute("title", "FreshSpring - "+slug+" - "+page.getContent().getTouts().size());
+        model.addAttribute("title", "FreshSpring - "+slug);
         model.addAttribute("footer",page.getFooter().getFormattedFooter());
         model.addAttribute("toutList",page.getContent().getTouts());
         model.addAttribute("routes",page.getContent().getRoutes());

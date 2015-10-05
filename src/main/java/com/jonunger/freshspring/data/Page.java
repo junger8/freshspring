@@ -8,7 +8,6 @@ public class Page {
     private Header header;
     private Content content;
 
-
     public Page(Header header, Content content, Footer footer){
         this.header = header;
         this.content = content;

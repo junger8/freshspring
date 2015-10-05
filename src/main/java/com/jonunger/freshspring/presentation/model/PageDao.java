@@ -42,7 +42,7 @@ public class PageDao {
 
         try {
 
-            Object obj = parser.parse(new FileReader("c:\\coder\\test.json"));
+            Object obj = parser.parse(new FileReader("c:\\coder\\data.json"));
 
             JSONObject jsonObject = (JSONObject) obj;
 
@@ -50,7 +50,7 @@ public class PageDao {
             footerMessage = (String) jsonObject.get("footerMessage");
             copyYear = (Long) jsonObject.get("year");
 
-            // loop array
+            // Find Routes
             JSONArray pages = (JSONArray) jsonObject.get("pages");
             Iterator<JSONObject> pagesIt = pages.iterator();
             while (pagesIt.hasNext()) {
@@ -62,10 +62,9 @@ public class PageDao {
                     headline = (String) page.get("headline");
                     subheadline = (String) page.get("subheadline");
 
+                    //Get Touts
                     JSONArray touts = (JSONArray) page.get("touts");
-
                     Iterator<JSONObject> toutsIt = touts.iterator();
-
                     while (toutsIt.hasNext()) {
                         JSONObject tout = toutsIt.next();
                         String toutHeader = (String) tout.get("header");
