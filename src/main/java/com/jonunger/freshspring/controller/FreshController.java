@@ -24,10 +24,18 @@ public class FreshController {
         return "index";
     }
 
-    @RequestMapping("*")
-    public String notFound(ModelMap model){
-        model.addAttribute("title","FreshSpring - Error");
-        model.addAttribute("message","Error 404 - Page Not Found!");
-        return "404";
+    @RequestMapping(value = "/", method=RequestMethod.GET)
+    public String router(ModelMap model) {
+        String slug = "about";
+        PageService pageService = new PageService(slug);
+        Page page = pageService.getPage();
+        model.addAttribute("headline", page.getContent().getHeader().getHeadline());
+        model.addAttribute("subheadline", page.getContent().getHeader().getSubheadline());
+        model.addAttribute("title", "FreshSpring - "+slug);
+        model.addAttribute("footer",page.getFooter().getFormattedFooter());
+        model.addAttribute("routes",page.getContent().getRoutes());
+        return "index";
     }
+
+
 }
