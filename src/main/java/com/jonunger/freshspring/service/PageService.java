@@ -2,6 +2,8 @@ package com.jonunger.freshspring.service;
 
 import com.jonunger.freshspring.domain.*;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -21,6 +23,8 @@ import java.util.List;
  * Created by junger on 10/4/2015.
  */
 public class PageService {
+
+    Logger logger = LogManager.getLogger();
 
     private Page page;
 
@@ -93,11 +97,11 @@ public class PageService {
             }
 
         } catch (FileNotFoundException e) {
-            e.printStackTrace();
+            logger.error(e);
         } catch (IOException e) {
-            e.printStackTrace();
+            logger.error(e);
         } catch (ParseException e) {
-            e.printStackTrace();
+            logger.error(e);
         }
 
         Header header = new Header(headline, subheadline);

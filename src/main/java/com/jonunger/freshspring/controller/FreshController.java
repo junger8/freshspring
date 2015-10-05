@@ -2,6 +2,8 @@ package com.jonunger.freshspring.controller;
 
 import com.jonunger.freshspring.domain.Page;
 import com.jonunger.freshspring.service.PageService;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -16,6 +18,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class FreshController {
 
+    Logger logger = LogManager.getLogger();
+
     /**
      * Router
      * @param model
@@ -24,6 +28,11 @@ public class FreshController {
      */
     @RequestMapping(value = "/{id}", method=RequestMethod.GET)
     public String router(ModelMap model, @PathVariable("id") String slug) {
+
+        if(logger.isDebugEnabled()){
+            logger.debug("Requested Route: /"+slug);
+        }
+
         PageService pageService = new PageService(slug);
         Page page = pageService.getPage();
         model.addAttribute("headline", page.getContent().getHeader().getHeadline());
