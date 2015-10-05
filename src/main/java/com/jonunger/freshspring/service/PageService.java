@@ -15,21 +15,36 @@ import java.util.Iterator;
 import java.util.List;
 
 /**
+ * PageService
+ * PageService is responsible for accessing the json data and building a page for the application.
+ * @author junger8
  * Created by junger on 10/4/2015.
  */
 public class PageService {
 
     private Page page;
 
+    /**
+     * Page Service Constructor
+     * @param slug
+     */
     public PageService(String slug) {
         this.page = setPage(slug);
     }
 
-    //Return Page
+    /**
+     * Get Page
+     * @return Page
+     */
     public Page getPage(){
         return page;
     }
 
+    /**
+     * Set Page based on a slug
+     * @param slug
+     * @return Page
+     */
     private Page setPage(String slug) {
         JSONParser parser = new JSONParser();
         List<String> routeList = new ArrayList<String>();

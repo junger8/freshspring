@@ -1,6 +1,8 @@
 package com.jonunger.freshspring.domain;
 
 /**
+ * Footer Domain Class
+ * @author junger8
  * Created by junger on 10/4/2015.
  */
 public class Footer {
@@ -9,6 +11,12 @@ public class Footer {
     private String company;
     private String comment;
 
+    /**
+     * Footer Constructor
+     * @param copyYear
+     * @param company
+     * @param comment
+     */
     public Footer(Long copyYear, String company, String comment){
         this.copyYear = copyYear;
         this.company = company;
@@ -39,6 +47,10 @@ public class Footer {
         this.comment = comment;
     }
 
+    /**
+     * Formatted Footer to just make life easier
+     * @return CopyYear Company Comment
+     */
     public String getFormattedFooter(){
         return getCopyYear()+" "+getCompany()+" "+getComment();
     }

@@ -1,6 +1,10 @@
 package com.jonunger.freshspring.domain;
 
 /**
+ * Tout Domain Class
+ * A Tout is an informational section that can be used on any of the pages,
+ * touts in this application only contain a header, message, and button for more information
+ * @author junger8
  * Created by junger on 10/4/2015.
  */
 public class Tout {
@@ -8,6 +12,12 @@ public class Tout {
     private String message;
     private String buttonMessage;
 
+    /**
+     * Tout Constructor
+     * @param header
+     * @param message
+     * @param buttonMessage
+     */
     public Tout(String header, String message, String buttonMessage){
         this.header = header;
         this.message = message;

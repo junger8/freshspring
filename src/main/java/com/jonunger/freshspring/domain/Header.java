@@ -1,6 +1,8 @@
 package com.jonunger.freshspring.domain;
 
 /**
+ * Header Domain Class
+ * @author junger8
  * Created by junger on 10/4/2015.
  */
 public class Header {
@@ -9,6 +11,11 @@ public class Header {
     private String headline;
     private String subheadline;
 
+    /**
+     * Header Construstor
+     * @param headline
+     * @param subheadline
+     */
     public Header(String headline, String subheadline){
         this.headline = headline;
         this.subheadline = subheadline;
