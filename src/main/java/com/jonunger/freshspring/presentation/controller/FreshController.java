@@ -15,11 +15,12 @@ public class FreshController {
     public String router(ModelMap model, @PathVariable("id") String slug) {
         PageDao pageDao = new PageDao(slug);
         Page page = pageDao.getPage();
-        model.addAttribute("headline", page.getHeader().getHeadline());
-        model.addAttribute("subheadline", page.getHeader().getSubheadline());
-        model.addAttribute("title", "FreshSpring - "+slug);
+        model.addAttribute("headline", page.getContent().getHeader().getHeadline());
+        model.addAttribute("subheadline", page.getContent().getHeader().getSubheadline());
+        model.addAttribute("title", "FreshSpring - "+slug+" - "+page.getContent().getTouts().size());
         model.addAttribute("footer",page.getFooter().getFormattedFooter());
         model.addAttribute("toutList",page.getContent().getTouts());
+        model.addAttribute("routes",page.getContent().getRoutes());
         return "index";
     }
 

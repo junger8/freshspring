@@ -5,6 +5,7 @@ package com.jonunger.freshspring.service;
  */
 public class PageService extends AbstractService {
 
+
     public PageService(){
     }
 
@@ -16,4 +17,6 @@ public class PageService extends AbstractService {
     public String getFooter(){
         return "something";
     }
+
+
 }

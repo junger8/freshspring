@@ -9,12 +9,6 @@ public class Header {
     private String headline;
     private String subheadline;
 
-    public Header(){
-        this.slug = "default";
-        this.headline = "FreshSpring";
-        this.subheadline = "This is the default";
-    }
-
     public Header(String headline, String subheadline){
         this.headline = headline;
         this.subheadline = subheadline;

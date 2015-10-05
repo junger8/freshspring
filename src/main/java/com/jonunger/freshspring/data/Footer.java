@@ -5,31 +5,22 @@ package com.jonunger.freshspring.data;
  */
 public class Footer {
 
-    private int id;
-    private int copyYear;
+    private Long copyYear;
     private String company;
     private String comment;
 
-    public Footer(int copyYear, String company, String comment){
+    public Footer(Long copyYear, String company, String comment){
         this.copyYear = copyYear;
         this.company = company;
         this.comment = comment;
     }
 
-    public int getCopyYear() {
+    public Long getCopyYear() {
         return copyYear;
     }
 
-    public void setCopyYear(int copyYear) {
+    public void setCopyYear(Long copyYear) {
         this.copyYear = copyYear;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public String getCompany() {

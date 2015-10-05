@@ -1,5 +1,5 @@
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
-<html>
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,12 +22,12 @@
 <nav class="navbar navbar-default navbar-fixed-top">
 	<div class="container">
 		<ul class="nav navbar-nav">
-			<li><a class="navbar-brand" href="/home">
+			<li><a class="navbar-brand" href="/about">
 				<span class="glyphicon glyphicon-leaf" aria-hidden="true"></span>
 			</a></li>
-			<li><a href="/about">About</a></li>
-			<li><a href="/contact">Contact</a></li>
-			<li><a href="/admin">Admin</a></li>
+			<c:forEach items="${routes}" var="route">
+				<li><a href="${route}">${route}</a></li>
+			</c:forEach>
 		</ul>
 
 	</div>
@@ -44,13 +44,14 @@
 <div class="container">
 	<!-- Example row of columns -->
 	<div class="row">
-		<c:forEach items="${toutList}" var="tout" varStatus="vs">
+	<c:forEach items="${toutList}" var="tout">
 			<div class="col-md-4">
-				<h2>Header</h2>
-				<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-				<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+				<h2>${tout.header}</h2>
+				<p>${tout.message}</p>
+				<p><a class="btn btn-default" href="#" role="button">${tout.buttonMessage} &raquo;</a></p>
 			</div>
-		</c:forEach>
+	</c:forEach>
+
 	</div>
 
 	<hr>
